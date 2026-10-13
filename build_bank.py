@@ -240,5 +240,10 @@ What is the excluded constructivist view of perception?|Perception combines info
 Give two sound-localization cues from the excluded slide.|Differences in sound level between ears provide one cue.|Differences in arrival time between ears provide another.|Week 2 · PDF p. 86 · Not on test|Sound localization
 ''')
 
+from reading_bank import build_reading_questions
+for question in bank:
+    question['origin'] = 'lecture' if groups[question['group']]['kind'] == 'lecture' else 'optional'
+    question['level'] = 'application' if question['id'] in {'w1-m02','w1-m03','w1-m05','w1-m06','w1-m07','w1-m11','w1-m12','w1-m13','w1-m14','w1-m15','w1-m17','w1-m18','w1-m23','w1-m25','w2-m04','w2-m05','w2-m06','w2-m07','w2-m08','w2-m09','w2-m10','w2-m13','w2-m14','w2-m15','w2-m16','w2-m17','w2-m20','w2-m21','w2-m24','w3-m01','w3-m02','w3-m03','w3-m07','w3-m09','w3-m10','w3-m11','w3-m12','w3-m13','w3-m15','w3-m16','w3-m17','w3-m18','w3-m19','w3-m23','w3-m24','w3-m25','w4-m02','w4-m03','w4-m04','w4-m05','w4-m06','w4-m10','w4-m12','w4-m14','w4-m21','w4-m22'} or question['type']=='short' else 'concept'
+bank.extend(build_reading_questions())
 (Path(__file__).resolve().parent.parent / 'questions.js').write_text('window.STUDY_DATA = '+json.dumps({'groups':groups,'questions':bank},ensure_ascii=False)+';\n')
 print(json.dumps({'mcq':sum(q['type']=='mcq' for q in bank),'short':sum(q['type']=='short' for q in bank),'core':sum(groups[q['group']]['kind']=='lecture' for q in bank)}))

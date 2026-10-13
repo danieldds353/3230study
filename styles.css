@@ -10,3 +10,5 @@
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
 .sidebar{min-width:0}@media(max-width:850px){.app-shell{grid-template-columns:minmax(0,1fr)}.sidebar nav{max-width:100%}}
+
+.answer-check{margin-top:13px;font-size:10px;color:#5c7251}.answer-check summary{cursor:pointer}.answer-check ul{padding-left:17px;line-height:1.8;margin-bottom:0}
