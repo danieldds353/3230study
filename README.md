@@ -1,55 +1,40 @@
-# ITEC 3230 — Recall Studio: Slides + Matching Readings
+# ITEC 3230 — Recall Studio: all six supplied lectures
 
-An updated GitHub-ready study website. Professor Andriy Pavlovych’s supplied Weeks 1–4 slides define the scope. Selected matching sections from both supplied books deepen those topics.
+This GitHub-ready package adds the missing **Lecture 05: Prototyping & walkthroughs** to the latest version, retaining Lecture 06, Weeks 1–4, matching readings and optional sections.
 
-## Question bank
+## New Lecture 05 material
 
-- 164 slide-aligned MCQs and 80 slide-aligned short-answer prompts.
-- This includes the original 100 MCQs and 48 short answers plus 64 MCQs and 32 short answers connected to readings.
-- 20 optional MCQs and 10 optional short answers remain in separate project, other-professor and “Not on test” sections.
-- Total: **184 MCQs + 90 short answers = 274 questions**.
+- **40 original MCQs** with explanations and exact PDF page references.
+- **24 short-answer questions**, each with two concise model lines and key-point checklists.
+- Topics: conceptual models/metaphors, interaction types/styles, fidelity and coverage, prototype lifecycles, storyboards/PICTIVE, interface builders/Wizard of Oz, principles/visual design, participatory design, heuristic evaluation, cognitive walkthroughs, GOMS, KLM and Fitts’ Law.
+- Downloadable `lecture-05-study-guide.pdf`; the Lecture 06 PDF is retained.
+- Lecture 05 appears before Lecture 06 in the lecture cards and selectors. The existing 338 question objects and their order are unchanged; 64 new questions are appended with IDs beginning `l5-`.
+- Practice and timed rounds can select Lecture 05 alone or all supplied lectures. No additional textbook assignment or later assessment format is inferred.
 
-Every reading-linked question cites a book section/chapter and relevant slide pages. These questions are original applications, not copied textbook exercises. Complete book files and extracted book text are not in this ZIP.
+## Bank totals
 
-## What changed
+| Scope | MCQ | Short answer | Total |
+| --- | ---: | ---: | ---: |
+| Weeks 1–4 + existing matching readings | 164 | 80 | 244 |
+| Lecture 05 | 40 | 24 | 64 |
+| Lecture 06 | 40 | 24 | 64 |
+| All supplied lectures | **244** | **128** | **372** |
+| Optional project / other-professor / excluded background | 20 | 10 | 30 |
+| Complete bank | **264** | **138** | **402** |
 
-- Default timed practice is **60 minutes**, reflecting the latest expectation of **8–10 exam questions**.
-- Choose 8 or 10 questions and mixed, short-answer-only, or MCQ-only practice. The mixed ratio is a practice choice, not a confirmed exam split.
-- Material filters: slides + matching readings, original slide questions, or reading-linked questions.
-- An application-question filter supports scenario reasoning instead of recognition alone.
-- New reading map and expandable key-point checklists for reading-linked short answers.
-- Every short-answer model stays at two concise lines, with at most 40 words.
-- Original question IDs remain stable, preserving existing progress when replacing files on the same website/browser. New practice defaults migrate to one hour. An already running older session retains its original deadline.
+## Update GitHub Pages
 
-## Upload and publish on GitHub Pages
+1. Extract the ZIP.
+2. Upload its contents to the same repository folder as the previous version, replacing files with matching names.
+3. Keep `index.html`, `styles.css`, `app.js`, `questions.js`, `lecture-05-study-guide.pdf` and `lecture-06-study-guide.pdf` together.
+4. Commit to your existing publishing branch/folder and refresh the published page. No install or build is required.
 
-1. Extract this ZIP.
-2. Upload its contents into your repository’s top level, replacing the previous site files. Keep `index.html`, `styles.css`, `app.js`, and `questions.js` together.
-3. Commit to your publishing branch, usually `main`.
-4. In **Settings → Pages**, choose **Deploy from a branch**, select your branch and **/(root)**, and Save.
-5. Open the Pages link after deployment completes. If the old version remains visible, refresh the page to load the updated assets.
-
-No installation or build is needed for deployment. Relative asset paths support a GitHub Pages project site.
-
-Official setup guide: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
-
-## Reading alignment
-
-See **Reading map** in the website and `STUDY_GUIDE.md` in this package. Book sections were selected to match slide topics; this is not a claim that entire chapters have been assigned or will appear on the exam. Week 5 and later slides have not been supplied.
-
-Books used:
-
-- Rogers, Sharp & Preece, *Interaction Design: Beyond Human–Computer Interaction*, 6th edition (2023).
-- Norman, *The Design of Everyday Things*, revised and expanded edition (2013).
-
-Norman’s more precise affordance/signifier distinction and error analysis are clearly connected to the slides’ perceived-affordance, human-error and action-cycle material.
+The package does not publish to a GitHub account automatically. Progress uses the same browser-storage key and stable existing question IDs. Replacing files at the same website origin preserves compatible progress; Export/Import provides a backup. Moving to a different website address or browser does not automatically transfer local progress.
 
 ## Editing and local use
 
-Serve this folder with `python3 -m http.server 8000`, then open `http://localhost:8000`.
+Run `python3 tools/build_bank.py` to regenerate `questions.js`. Edit Lecture 05 content in `tools/prototyping_bank.py`, Lecture 06 in `tools/evaluation_bank.py`, original questions in `tools/build_bank.py` and reading-linked questions in `tools/reading_bank.py`. Python’s standard library is sufficient.
 
-Edit the original questions in `tools/build_bank.py` and the reading-linked additions in `tools/reading_bank.py`. Run `python3 tools/build_bank.py` to regenerate `questions.js`. Only Python’s standard library is needed.
+For local use, serve the folder with `python3 -m http.server 8000`. `LECTURE_05_QUESTIONS.md` and `LECTURE_06_QUESTIONS.md` provide source-order copies of the new sets. See `STUDY_GUIDE.md` for scope and revision advice.
 
-Progress stays in the browser on the current device. Use Export/Import on the progress page to transfer it. Changing the website origin or clearing browser data can remove access to existing local progress.
-
-This is a practice resource. Short answers are self-marked, and equivalent accurate wording can count. The models and checklists do not promise an instructor’s mark or an extra grade for brevity.
+The 8–10 question, 60-minute format remains a study preset from earlier exam preparation. It is not a confirmed format for later assessments. Answers are self-marked; brevity is not a substitute for completeness. The source labels now correctly distinguish primary Lecture 05 coverage of analytical/predictive models from the optional other-professor photos.

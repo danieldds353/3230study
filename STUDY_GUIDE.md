@@ -1,6 +1,6 @@
 # Slides first, readings second
 
-Andriy’s Weeks 1–4 slides define the topics. Use the books to clarify those topics and practise applying them. These are selected matching sections, not a confirmed assigned-chapter list.
+Andriy’s supplied slides define the topics: all six supplied lectures. Use the books to clarify those topics and practise applying them. These are selected matching sections, not a confirmed assigned-chapter list.
 
 | Slide topics | Matching reading sections | Main practice aim |
 |---|---|---|
@@ -40,4 +40,46 @@ Use the application filter to practise new situations. Use reading-only practice
 
 ## Keep the scope clear
 
-The project and another professor’s midterm remain optional. Week 2 slides marked “Not on test” are outside default rounds. The website does not infer Week 5 content from the books. Exact exam question-type distribution and any brevity bonus are not confirmed here.
+The project and another professor’s midterm remain optional. Week 2 slides marked “Not on test” are outside default rounds. Lecture 05 is now supplied and has its own slide-based question set. Exact exam question-type distribution and any brevity bonus are not confirmed here.
+
+
+## Lecture 06: Evaluation, usability testing, field trials and data analysis
+
+The complete supplied file contains 94 PDF pages, including data analysis from p. 54 onward. Use its separate website set for 40 MCQs and 24 short answers; download the PDF notes from Overview or Reading map.
+
+| Topic | Source PDF pages |
+| --- | --- |
+| Evaluation purposes and usability-test procedure | 8–18, 22–23 |
+| SUS conversion and interpretation | 19–21 |
+| Experiments, variables and participant allocation | 24–50 |
+| Field studies and appropriation | 51–53 |
+| Data types, scales and statistics | 57–69 |
+| Charts and worked examples | 70–72 |
+| Content analysis and critical incidents | 74–79 |
+| Grounded theory, coding and reporting | 80–94 |
+
+Check item polarity when scoring SUS; a 0–100 score is not a task-success percentage. Control plausible confounds, counterbalance within-subject order and limit sample conclusions. Classify the data actually recorded: exact age differs from age brackets. Keep qualitative code names stable and distinguish observed facts from interpretations.
+
+This new set is slide-based. The existing matching-reading questions are preserved; no additional textbook reading assignment or later exam scope is assumed.
+
+
+## Lecture 05: Prototyping and interface walkthroughs
+
+The missing 96-page file is now included. Study it through 40 MCQs and 24 two-line short answers, or download `lecture-05-study-guide.pdf` from the website. Lecture 06 remains intact.
+
+| Topic | Lecture 05 PDF pages |
+| --- | --- |
+| Conceptual models, metaphors, interaction types/styles | 3–13 |
+| Prototype purpose, fidelity, sketches, storyboards and PICTIVE | 21–32 |
+| Horizontal/vertical/scenario coverage; prototype-to-product strategies | 33–36 |
+| Interface builders and Wizard of Oz | 41–45 |
+| Principles, simplicity and learnability | 47–58 |
+| Layout, colour and typography | 60–72 |
+| Participatory design and analytical methods | 75–81 |
+| Nielsen heuristics and inspection limits | 82–88 |
+| Cognitive walkthrough: four questions | 89–91 |
+| GOMS, KLM and Fitts’ Law | 92–96 |
+
+Keep fidelity separate from functional coverage. Name the heuristic and observable problem rather than listing labels. For walkthroughs distinguish noticing an action from understanding it. For KLM count the specified operators; for Fitts use the lecture’s formula with consistent distance/width notation and units. The new KLM numeric exercises state their practice constants explicitly; the lecture does not supply that timing table.
+
+The other professor’s photos remain optional. GOMS/KLM/Fitts and walkthroughs now have primary coverage through Andriy’s Lecture 05, independently of the photos. Historical tool examples are not current product recommendations.
